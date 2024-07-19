@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap Practice</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for theme customization (optional) -->
+    <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">AirSoccer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>The Soccer Blimp</h1>
+                    <h3>Bringing the pickup soccer experience to new "heights".</h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://smartcdn.gprod.postmedia.digital/nationalpost/wp-content/uploads/2018/06/100708-n-9174g-002-e1528903369608.jpg"
+                        class="img-fluid" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <i class="fa fa-laptop"></i>
+                        <h3>What We Offer</h3>
+                        <h4>Welcome aboard AirSoccer, where we redefine the thrill of soccer! Imagine soaring high above
+                            the city skyline, surrounded by panoramic views, as you dribble and score goals on our
+                            state-of-the-art blimp pitch. Whether you're a seasoned player or a casual enthusiast, our
+                            unique airborne soccer experience promises adrenaline-pumping matches like never before.
+                            Join us for a game suspended in the sky, where every kick and pass takes soccer to new
+                            heights!.</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <i class="fa fa-mobile"></i>
+                        <h3>Mobile Apps</h3>
+                        <h4>On the AirSoccer mobile app, you can manage all aspects of your blimp soccer experience with
+                            ease and convenience. From booking your next game session to checking availability and
+                            selecting your preferred pitch location within the blimp, everything is just a tap away. You
+                            can also view upcoming matches, join tournaments, and connect with fellow players through
+                            in-app messaging and social features. Track your stats and performance over time, receive
+                            real-time game updates, and explore exclusive offers and promotions tailored specifically
+                            for our loyal AirSoccer community. Whether you're a player or a fan, our app ensures you
+                            stay engaged and informed, enhancing your overall AirSoccer experience both on and off the
+                            blimp pitch.</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <i class="fa fa-cog"></i>
+                        <h3>Coming Soon</h3>
+                        <h4>Get ready to elevate your soccer game to new heights because AirSoccer is launching next
+                            summer! Our innovative blimp soccer experience promises to transform how you play and enjoy
+                            the beautiful game. Stay tuned as we prepare to unveil an exhilarating adventure in the
+                            skies, where every match becomes a thrilling journey above the clouds. Whether you're a
+                            soccer enthusiast or simply looking for a unique sporting experience, AirSoccer will
+                            redefine your expectations of what it means to play soccer. Join us as we prepare to take
+                            off and bring the excitement of airborne soccer to you!
+
+
+
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://smartcdn.gprod.postmedia.digital/nationalpost/wp-content/uploads/2018/06/100708-n-9174g-002-e1528903369608.jpg" class="card-img-top" alt="Portfolio Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Soccer Blimp</h5>
+                            <p class="card-text">Bringing the pickup soccer experience to new "heights".</p>
+                            <a href="#" class="btn btn-primary">View Soccer Blimp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+   
+    <section class="contact">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="name">It would be greatly appreciated if you can leave your feedback so we here at Air Soccer can do our best to appeal to our customers!</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
